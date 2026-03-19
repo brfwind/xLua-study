@@ -6,6 +6,7 @@ using XLua;
 
 //无参无返回值的委托
 public delegate void CustomCall();
+
 //有参有返回的委托 (这是自定义的委托，需要加特性，并且要让XLua生成代码，才能被识别)
 // [CSharpCallLua]
 // public delegate int CustomCall2(int a);
