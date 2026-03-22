@@ -9,7 +9,7 @@ using XLua;
 /// 提供 Lua解析器
 /// 保证解析器的唯一性
 /// </summary>
-public class LuaMgr : BaseManager<LuaMgr>
+public class LuaMgr : BaseManager<LuaMgr> //继承单例
 {
     //执行Lua语言的函数
     //释放垃圾
@@ -17,7 +17,7 @@ public class LuaMgr : BaseManager<LuaMgr>
     //重定向
     private LuaEnv luaEnv;
 
-    //得到Lua中的_G 
+    //得到Lua中的大G表
     public LuaTable Global
     {
         get
@@ -36,6 +36,7 @@ public class LuaMgr : BaseManager<LuaMgr>
         luaEnv.AddLoader(MyCustomABLoader);
     }
 
+    //从路径获取lua脚本
     private byte[] MyCustomLoader(ref string filePath)
     {
         string path = Application.dataPath + "/Lua/" + filePath + ".lua";
@@ -53,6 +54,7 @@ public class LuaMgr : BaseManager<LuaMgr>
         return null;
     }
 
+    //从AB包获取lua脚本
     private byte[] MyCustomABLoader(ref string filePath)
     {
         TextAsset lua = ABManager.Instance.LoadRes<TextAsset>("lua", filePath + ".lua");

@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 963194236}
   - component: {fileID: 963194237}
   - component: {fileID: 963194238}
+  - component: {fileID: 963194239}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -528,12 +529,24 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13e6cadc6e1777c48af4a05bbcafe7dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   father: {fileID: 2010216863}
+--- !u!114 &963194239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 450457fd6338ac64a8e004b44922e9f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1276782504
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,12 +745,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2010216863}
   m_Layer: 0
-  m_Name: FatherObject
+  m_Name: "Homework\u2014\u2014FatherObject"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2010216863
 Transform:
   m_ObjectHideFlags: 0

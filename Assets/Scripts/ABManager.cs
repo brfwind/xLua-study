@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class ABManager : SingletonAutoMono<ABManager>
+public class ABManager : SingletonAutoMono<ABManager> //继承单例
 {
     #region 成员变量/属性
 
